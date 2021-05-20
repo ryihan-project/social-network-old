@@ -21,6 +21,9 @@ $announce = '';
 $cityCountryStateClass = '';
 $orderClass = '';
 $liveStreamingClass = '';
+
+$activePage = array(
+);
 	if($pageActive == 'add-new-language-keys'){
 	   $langClass = 'class="active activeSetting"';
 	}
