@@ -26,6 +26,11 @@ $activePage = array(
 	"dashboard",
 	"site-settings",
 );
+ 
+if(in_array($pageActive, $activePage)) { 
+    if($pageActive == 'manage_new_orders'){
+	    $orderClass = 'class="active activeSetting"';
+	}
 	if($pageActive == 'add-new-language-keys'){
 	   $langClass = 'class="active activeSetting"';
 	}
