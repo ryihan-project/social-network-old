@@ -34,6 +34,9 @@ if(in_array($pageActive, $activePage)) {
     if($pageActive == 'manage_new_orders'){
 	    $orderClass = 'class="active activeSetting"';
 	}
+	if($pageActive == 'live_streamings'){
+	    $liveStreamingClass = 'class="active activeSetting"';
+	}
 	if($pageActive == 'add-new-language-keys'){
 	   $langClass = 'class="active activeSetting"';
 	}
