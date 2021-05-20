@@ -1,0 +1,3 @@
+<?php  
+$urlarray=explode('/', $_SERVER["REQUEST_URI"]);
+$pageActive = end($urlarray); 
