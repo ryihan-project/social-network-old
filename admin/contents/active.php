@@ -27,3 +27,5 @@ $liveStreamingClass = '';
 	if($pageActive == 'manage_privacy_policies'){
 	    $pageClass = 'class="active activeSetting"';
 	} 
+} 
+?>
