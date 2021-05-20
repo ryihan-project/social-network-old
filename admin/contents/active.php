@@ -4,3 +4,7 @@ $pageActive = end($urlarray);
 $dashClass ='';  
 $userClass = '';
 $settingClass = '';
+$postClass ='';
+$reportClass ='';
+$langClass ='';
+$themeClass = '';
