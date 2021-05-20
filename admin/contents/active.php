@@ -23,6 +23,8 @@ $orderClass = '';
 $liveStreamingClass = '';
 
 $activePage = array(
+	"dashboard",
+	"site-settings",
 );
 	if($pageActive == 'add-new-language-keys'){
 	   $langClass = 'class="active activeSetting"';
