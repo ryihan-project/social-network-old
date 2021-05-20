@@ -21,6 +21,9 @@ $announce = '';
 $cityCountryStateClass = '';
 $orderClass = '';
 $liveStreamingClass = '';
+	if($pageActive == 'manage_about_us'){
+	    $pageClass = 'class="active activeSetting"';
+	}
 	if($pageActive == 'manage_privacy_policies'){
 	    $pageClass = 'class="active activeSetting"';
 	} 
