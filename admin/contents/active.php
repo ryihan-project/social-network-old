@@ -25,6 +25,9 @@ $liveStreamingClass = '';
 $activePage = array(
 	"dashboard",
 	"site-settings",
+	"live_streamings",
+	"live_streamings_features",
+	"amazon-s3"
 );
  
 if(in_array($pageActive, $activePage)) { 
