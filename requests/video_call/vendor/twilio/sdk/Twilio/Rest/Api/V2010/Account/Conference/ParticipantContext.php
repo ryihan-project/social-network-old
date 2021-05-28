@@ -15,3 +15,15 @@ use Twilio\Serialize;
 use Twilio\Values;
 use Twilio\Version;
 
+class ParticipantContext extends InstanceContext {
+    /**
+     * Initialize the ParticipantContext
+     * 
+     * @param \Twilio\Version $version Version that contains the resource
+     * @param string $accountSid The SID of the Account that created the resource
+     *                           to fetch
+     * @param string $conferenceSid The SID of the conference with the participant
+     *                              to fetch
+     * @param string $callSid The Call SID of the resource to fetch
+     * @return \Twilio\Rest\Api\V2010\Account\Conference\ParticipantContext 
+     */
