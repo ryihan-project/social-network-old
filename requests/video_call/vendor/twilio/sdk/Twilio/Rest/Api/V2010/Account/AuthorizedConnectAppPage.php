@@ -22,3 +22,13 @@ class AuthorizedConnectAppPage extends Page {
     public function buildInstance(array $payload) {
         return new AuthorizedConnectAppInstance($this->version, $payload, $this->solution['accountSid']);
     }
+
+    /**
+     * Provide a friendly representation
+     * 
+     * @return string Machine friendly representation
+     */
+    public function __toString() {
+        return '[Twilio.Api.V2010.AuthorizedConnectAppPage]';
+    }
+}
