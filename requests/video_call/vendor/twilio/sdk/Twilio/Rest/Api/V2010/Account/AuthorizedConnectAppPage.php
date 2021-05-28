@@ -7,3 +7,9 @@
  * /       /
  */
 
+namespace Twilio\Rest\Api\V2010\Account;
+
+use Twilio\Page;
+
+class AuthorizedConnectAppPage extends Page {
+    public function __construct($version, $response, $solution) {
