@@ -39,3 +39,19 @@ class ParticipantContext extends InstanceContext {
 
         $this->uri = '/Accounts/' . rawurlencode($accountSid) . '/Conferences/' . rawurlencode($conferenceSid) . '/Participants/' . rawurlencode($callSid) . '.json';
     }
+
+    /**
+     * Fetch a ParticipantInstance
+     * 
+     * @return ParticipantInstance Fetched ParticipantInstance
+     * @throws TwilioException When an HTTP error occurs.
+     */
+    public function fetch() {
+        $params = Values::of(array());
+
+        $payload = $this->version->fetch(
+            'GET',
+            $this->uri,
+            $params
+        );
+
