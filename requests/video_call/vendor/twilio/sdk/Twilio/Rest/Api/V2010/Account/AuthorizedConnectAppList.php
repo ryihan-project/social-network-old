@@ -7,3 +7,6 @@
  * /       /
  */
 
+namespace Twilio\Rest\Api\V2010\Account;
+
+use Twilio\ListResource;
