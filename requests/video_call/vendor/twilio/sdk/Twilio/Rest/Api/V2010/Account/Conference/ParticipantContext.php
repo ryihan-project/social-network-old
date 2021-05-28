@@ -71,3 +71,20 @@ class ParticipantContext extends InstanceContext {
      * @return ParticipantInstance Updated ParticipantInstance
      * @throws TwilioException When an HTTP error occurs.
      */
+    public function update($options = array()) {
+        $options = new Values($options);
+
+        $data = Values::of(array(
+            'Muted' => Serialize::booleanToString($options['muted']),
+            'Hold' => Serialize::booleanToString($options['hold']),
+            'HoldUrl' => $options['holdUrl'],
+            'HoldMethod' => $options['holdMethod'],
+            'AnnounceUrl' => $options['announceUrl'],
+            'AnnounceMethod' => $options['announceMethod'],
+            'WaitUrl' => $options['waitUrl'],
+            'WaitMethod' => $options['waitMethod'],
+            'BeepOnExit' => Serialize::booleanToString($options['beepOnExit']),
+            'EndConferenceOnExit' => Serialize::booleanToString($options['endConferenceOnExit']),
+            'Coaching' => Serialize::booleanToString($options['coaching']),
+            'CallSidToCoach' => $options['callSidToCoach'],
+        ));
