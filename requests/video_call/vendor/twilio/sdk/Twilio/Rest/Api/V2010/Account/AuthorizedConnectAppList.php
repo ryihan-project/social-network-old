@@ -13,3 +13,7 @@ use Twilio\ListResource;
 use Twilio\Values;
 use Twilio\Version;
 
+class AuthorizedConnectAppList extends ListResource {
+    /**
+     * Construct the AuthorizedConnectAppList
+     * 
