@@ -27,3 +27,15 @@ class ParticipantContext extends InstanceContext {
      * @param string $callSid The Call SID of the resource to fetch
      * @return \Twilio\Rest\Api\V2010\Account\Conference\ParticipantContext 
      */
+    public function __construct(Version $version, $accountSid, $conferenceSid, $callSid) {
+        parent::__construct($version);
+
+        // Path Solution
+        $this->solution = array(
+            'accountSid' => $accountSid,
+            'conferenceSid' => $conferenceSid,
+            'callSid' => $callSid,
+        );
+
+        $this->uri = '/Accounts/' . rawurlencode($accountSid) . '/Conferences/' . rawurlencode($conferenceSid) . '/Participants/' . rawurlencode($callSid) . '.json';
+    }
