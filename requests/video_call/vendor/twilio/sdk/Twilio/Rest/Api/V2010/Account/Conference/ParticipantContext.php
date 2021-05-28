@@ -64,3 +64,10 @@ class ParticipantContext extends InstanceContext {
         );
     }
 
+    /**
+     * Update the ParticipantInstance
+     * 
+     * @param array|Options $options Optional Arguments
+     * @return ParticipantInstance Updated ParticipantInstance
+     * @throws TwilioException When an HTTP error occurs.
+     */
