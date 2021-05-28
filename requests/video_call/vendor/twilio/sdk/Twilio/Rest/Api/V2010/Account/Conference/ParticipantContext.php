@@ -88,3 +88,19 @@ class ParticipantContext extends InstanceContext {
             'Coaching' => Serialize::booleanToString($options['coaching']),
             'CallSidToCoach' => $options['callSidToCoach'],
         ));
+
+        $payload = $this->version->update(
+            'POST',
+            $this->uri,
+            array(),
+            $data
+        );
+
+        return new ParticipantInstance(
+            $this->version,
+            $payload,
+            $this->solution['accountSid'],
+            $this->solution['conferenceSid'],
+            $this->solution['callSid']
+        );
+    }
