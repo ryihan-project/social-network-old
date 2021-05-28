@@ -55,3 +55,12 @@ class ParticipantContext extends InstanceContext {
             $params
         );
 
+        return new ParticipantInstance(
+            $this->version,
+            $payload,
+            $this->solution['accountSid'],
+            $this->solution['conferenceSid'],
+            $this->solution['callSid']
+        );
+    }
+
